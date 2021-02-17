@@ -7,6 +7,21 @@
         background-color: crimson;
         color: darkorange;
       }
+
+      table{
+        border: 3px solid black;
+        border-collapse: collapse;
+        
+      }
+      th{
+        border: 3px solid red;
+       
+      }
+
+      td{
+        border: 3px solid black;
+        font-size: xx-large;
+      }
     </style>
   </head>
 
@@ -23,7 +38,7 @@
     <h1>HTML Basics</h1>
     <h5>Learn HTML</h5>
 
-    <p>
+    <!-- <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
       sapiente nam error asperiores rem quidem blanditiis facilis rerum ipsum,
       temporibus, earum odio nulla pariatur quisquam quam voluptatibus.
@@ -41,6 +56,46 @@
 
     <img src="https://images.unsplash.com/photo-1612814399449-d62fc71234c9?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8NnNNVmpUTFNrZVF8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="image2">
     
-    <a style="color: chartreuse;" href="http://www.codekul.com">Click here to visit codekul</a>
-</body>
+    <a style="color: chartreuse;" href="http://www.codekul.com"><img src="./images/4.jpg" alt="image"></a> -->
+
+    <tr>
+      <th>Day</th>
+      <th>Task</th>
+      <th>Schedule</th>
+     </tr>
+
+<table>
+  <tr>
+   <th colspan="2">Day</th>
+   
+   <th>Task</th>
+   
+   <th>status</th>
+  </tr>
+  <tr>
+    <td>Monday</td>
+    <td>8-12pm</td>
+    <td>Complete HTML Basics</td>
+   
+    <td rowspan="3">completed</td>  
+   
+  </tr>
+
+  <tr>
+    <td>Tuesday</td>
+    <td>12-3pm</td>
+    <td>Complete HTML tags</td>
+   
+   
+  </tr>
+
+  <tr>
+    <td>Wednesday</td>
+    <td>3-5pm</td>
+    <td>Complete CSS Basics</td>
+    
+    
+  </tr>
+</table>
+  </body>
 </html>
