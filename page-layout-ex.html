@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Layout</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      span {
+        background-color: cornflowerblue;
+      }
+
+      header {
+        background-color: crimson;
+        color: darkorange;
+        margin: 0;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      li {
+        display: inline;
+        padding: 15px;
+      }
+
+      nav{
+          background-color: darkturquoise;
+          justify-content: center;
+      }
+
+      ul{
+          margin-left: 300px;
+      }
+
+      aside{
+          float: right;
+          height: 200px;
+          width: 200px;
+          background-color: darkred;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Block-Level elements are suvh elements which takes the whole width od web Page
+    Inline - Elements are such elements which ocuupies the width according to its content. 
+
+List down block-level and inline-level elements-->
+
+    <!-- <div style="background-color: black; color: chartreuse;" class="header">
+        O
+    </div>
+    <div style="background-color: chocolate;">two</div>
+    <span>O</span>
+    <span>Two</span> -->
+
+    <div class="header"></div>
+    <div class="main-content"></div>
+    <div class="footer"></div>
+
+    <header>
+      <h1>Page Layout</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="http://www.codekul.com">Home</a></li>
+        <li><a href="http://www.codekul.com/about.html">About</a></li>
+        <li><a href="http://www.codekul.com/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi illo
+          ipsum, velit incidunt accusantium tempora itaque, quas quisquam libero
+          quos est laboriosam consectetur? Repellendus provident deserunt labore
+          sed non officia!
+        </p>
+      </section>
+
+
+      <aside>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi illo
+        ipsum, velit incidunt accusantium tempora itaque,
+      </aside>
+
+      <section>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi illo
+          ipsum, velit incidunt accusantium tempora itaque, quas quisquam libero
+          quos est laboriosam consectetur? Repellendus provident deserunt labore
+          sed non officia!
+        </p>
+      </section>
+
+
+      <section>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi illo
+          ipsum, velit incidunt accusantium tempora itaque, quas quisquam libero
+          quos est laboriosam consectetur? Repellendus provident deserunt labore
+          sed non officia!
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
