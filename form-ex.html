@@ -8,24 +8,68 @@
 </head>
 <body>
     <!-- read about autocomplete attribute -->
+
+    <!-- Employee Form 
+    Student Registration Form 
+    Air Line Ticket Registration-Form -->
     <form>
+
+        <fieldset>
+            <legend>Registration-Form</legend>
         <label for="firstname">First Name</label>
-        <input id="firstname" type="text" required> <br>
+        <input id="firstname" minlength="6" maxlength="10" type="text" required placeholder="First Name"> <br>
         <label for="age">Age</label>
-        <input id="age" type="number"> <br>
+        <input id="age" min="18" type="number"> <br>
         <label for="email">Email</label>
-        <input id="email" type="email" required>
+        <input id="email" type="email" placeholder="your@xyz.com" required>
 
         <label for="password">Password</label>
-        <input id="password" type="password">
+        <input id="password" type="password"> <br>
 
         <label for="date">Date</label>
-        <input type="date">
+        <input type="date"> <br>
 
-        <input type="button" value="Submit">
+        <label for="gender">Select Gender</label>
+        <input name="gender" type="radio">
+        <label for="female">Female</label>
+        <input name="gender" type="radio">
+        <label for="male">Male</label>
+
+        <input name="gender" type="radio">
+        <label for="other">Other</label> <br>
+
+        <label>Select Languages</label>
+        <input type="checkbox">
+        <label>English</label>
+        <input type="checkbox">
+        <label>Marathi</label>
+        <input type="checkbox">
+        <label>Hindi</label>
+
+        <input accept="pdf" type="file">
+
+        <input type="search">
+
+        <input type="datetime">
+
+        <input type="range">
+
+        <input type="tel" placeholder="+91-xxxxxxxxx"> <br>
+
+        <label>Enter Marks</label>
+        <input type="text">
+        <label>Out Of Marks</label>
+        <input type="text" value="100" disabled>
+
+        <input type="button" value="Register">
+        
         <input type="submit">
+        <input type="reset">
+        
 
-        <button>Submit</button>
+    
+        <button type="reset">Reset</button>
+    </fieldset>
     </form>
 </body>
 </html>
