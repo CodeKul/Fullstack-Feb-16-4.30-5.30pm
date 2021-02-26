@@ -17,7 +17,7 @@
         <fieldset>
             <legend>Registration-Form</legend>
         <label for="firstname">First Name</label>
-        <input id="firstname" minlength="6" maxlength="10" type="text" required placeholder="First Name"> <br>
+        <input id="firstname" minlength="6" size="5" maxlength="10" type="text" required placeholder="First Name"> <br>
         <label for="age">Age</label>
         <input id="age" min="18" type="number"> <br>
         <label for="email">Email</label>
@@ -54,20 +54,53 @@
 
         <input type="range">
 
-        <input type="tel" placeholder="+91-xxxxxxxxx"> <br>
+        <input type="tel" placeholder="+91-738-393-3346" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> <br>
 
         <label>Enter Marks</label>
         <input type="text">
         <label>Out Of Marks</label>
-        <input type="text" value="100" disabled>
+        <input type="text" value="100" disabled> <br>
+
+
+        <!-- To create a dropdown first use a select element 
+        then inside a select element to create a list use option tag/option element -->
+
+<!-- To select multiple options in dropdown we use 'multiple' in select tag -->
+
+        <select multiple>
+            <optgroup label="Frontend">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>Javascript</option>
+            </optgroup>
+            <optgroup label="Backend">
+                <option>Java</option>
+                <option>Database</option>
+                <option>Spring</option>
+            </optgroup>
+        </select>
+
+        <!-- value of list attribute must be equal to id value of datalist -->
+<input type="text" list="city">
+        <datalist name="city" id="city">
+            <option >Pune</option>
+            <option >Mumbai</option>
+            <option >Banglore</option>
+        </datalist><br>
+
+        <textarea name="" id="" cols="50" rows="5"></textarea>
+
+
 
         <input type="button" value="Register">
         
         <input type="submit">
         <input type="reset">
+
+
         
 
-    
+    <button type="submit">Submit</button>
         <button type="reset">Reset</button>
     </fieldset>
     </form>
