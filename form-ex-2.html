@@ -9,6 +9,8 @@
 <body>
 
 
+
+
     <form autocomplete="on"> 
         <label >First Name</label>
 
@@ -57,7 +59,46 @@
             <option >Pune</option>
                 <option >Mumbai</option>
                 <option >Goa</option>
-        </datalist>
+        </datalist> <br>
+
+
+<input type="date"> <br>
+<input type="time"> <br>
+<input type="datetime-local"> <br>
+
+
+<label>Marks Obtained</label>
+<input type="text"> 
+
+<label>Marks out of</label>
+<input type="text" disabled value="100"> <br>
+
+
+<select>
+    <option value="pune">Pune</option>
+    <option value="mumbai">Mumbai</option>
+    <option value="banglore">Banglore</option>
+</select>
+
+
+<input type="text" list="city">
+<datalist id="city">
+    <option value="pune">Pune</option>
+    <option value="mumbai">Mumbai</option>
+    <option value="banglore">Banglore</option>
+</datalist> <br>
+
+<label>Gender</label>
+<input id="male" type="radio" name="gender">
+<label>Male</label>
+<input type="radio" name="gender">
+<label>Female</label> <br>
+
+<label>Agree</label>
+<input type="checkbox">
+
+
+
 
 
         <input  value="Log in" type="button">
@@ -65,11 +106,7 @@
         <button type="submit">Login</button>
         <button type="reset">Reset</button>
 
-<input type="date">
-<input type="time">
-<input type="datetime-local"> 
 
-<input type="">
 
     </form>
 </body>
