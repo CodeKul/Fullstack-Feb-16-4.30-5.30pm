@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Document</title>
+
+    <style>
+        /* universal selector - 
+        whenever we use * it means whatever the css we write fo * {} it gets implemented 
+        for every element of webpage*/
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #red {
+            color: red;
+            font-size: xx-large;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        /*to vertically position our text or element we use vertical-align:middle*/
+
+        li {
+            display: inline;
+            vertical-align: middle;
+        }
+
+        nav {
+            background-color: red;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        li img {
+            height: 25px;
+        }
+
+        li i:hover {
+            color: gold;
+        }
+
+        .floating-text {
+            background-color: gold;
+        }
+
+        ul {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        section img{
+            height: 100px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <span>NEWS</span>
+        <span>LIVE TV</span>
+        <span id="red">INDIA TODAY</span>
+        <span>APP</span>
+        <span>Magazine</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="http://www.codekul.com">Home</a>
+            </li>
+            <li>
+                <a href="https://www.google.com">MyFeed</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com">Videos</a>
+            </li>
+            <li>
+                <a href="https://www.github.com">Malyalam</a>
+            </li>
+            <li>Marathi</li>
+            <li>Games</li>
+            <li>Sports</li>
+            <li>Politics</li>
+
+            <li>
+                <img src="https://img.icons8.com/doodle/48/000000/retro-tv.png" />
+            </li>
+
+            <i class="bi bi-search"></i>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+            </li>
+            <li>
+                <i class="fas fa-user"></i>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="floating-text">
+        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </span>
+    </div>
+
+
+    <main>
+        <section class="column-1">
+
+            <img src="./images/4.jpg" alt="image-one">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus saepe optio et suscipit a veniam quia
+                laborum! Corporis nisi, voluptatibus consequuntur expedita magni, velit magnam at excepturi totam
+                pariatur non!</p>
+
+        </section>
+
+        <section class="column-2">
+            <img src="./images/5.jpg" alt="image-2">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, inventore pariatur quod quos enim natus
+                tempore assumenda explicabo at fuga ad eveniet labore architecto reprehenderit culpa eius molestias
+                laudantium. Dolores?</p>
+        </section>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

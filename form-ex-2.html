@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+
+
+
+    <form autocomplete="on"> 
+        <label >First Name</label>
+
+        <input type="email">
+        <input type="password" required>
+        <input  type="text" minlength="4" maxlength="10" required id="name"><br>
+
+        <label for="age">Age</label>
+
+        <input id="age" min="18" max="60" required type="number"> <br>
+
+        <label for="email">Email</label>
+        <input autocomplete="off" id="email" required type="email"> <br>
+
+
+        <select multiple>
+            <option value="1">Java</option>
+            <option value="2">Spring</option>
+            <option value="3">Database</option>
+
+            <option value="1">Java</option>
+            <option value="2">Spring</option>
+            <option value="3">Database</option>
+        </select> <br>
+
+
+        <select>
+            <optgroup label="Backend">
+                <option >Java</option>
+                <option >Spring</option>
+                <option >Database</option>
+            </optgroup>
+
+            <optgroup label="Frontened">
+                <option >HTML</option>
+                <option >CSS</option>
+                <option >Javascript</option>
+            </optgroup>
+        </select> <br>
+
+
+        <label for="">City</label>
+        <input type="text" list="city">
+
+        <datalist id="city">
+            <option >Pune</option>
+                <option >Mumbai</option>
+                <option >Goa</option>
+        </datalist> <br>
+
+
+<input type="date"> <br>
+<input type="time"> <br>
+<input type="datetime-local"> <br>
+
+
+<label>Marks Obtained</label>
+<input type="text"> 
+
+<label>Marks out of</label>
+<input type="text" disabled value="100"> <br>
+
+
+<select>
+    <option value="pune">Pune</option>
+    <option value="mumbai">Mumbai</option>
+    <option value="banglore">Banglore</option>
+</select>
+
+
+<input type="text" list="city">
+<datalist id="city">
+    <option value="pune">Pune</option>
+    <option value="mumbai">Mumbai</option>
+    <option value="banglore">Banglore</option>
+</datalist> <br>
+
+<label>Gender</label>
+<input id="male" type="radio" name="gender">
+<label>Male</label>
+<input type="radio" name="gender">
+<label>Female</label> <br>
+
+<label>Agree</label>
+<input type="checkbox">
+
+
+
+
+
+        <input  value="Log in" type="button">
+        <input value="Login" type="submit">
+        <button type="submit">Login</button>
+        <button type="reset">Reset</button>
+
+
+
+    </form>
+</body>
+</html>
