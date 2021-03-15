@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box - Model</title>
+    <style>
+      div {
+        height: 400px;
+        width: 600px;
+      }
+
+      /*Applyling CSS for classes use dotClassName  ".class-name"*/
+      .container {
+        background-color: chartreuse;
+
+        /* padding-top: 30px;
+            padding-left: 30px;
+            padding-bottom: 40px;
+            padding-right: 50px; */
+
+        /* just using padding is a shorthand property */
+        padding: 60px;
+
+        /*if we are giving just 2 values for shrthand padding property
+first value will be implemented for TOP and BOTTOM
+second value will be implemented for LEFT and RIGHT SIDE*/
+        padding: 60px 30px;
+
+        /*if we are giving just 3 values for shrthand padding property
+first value will be implemented for TOP
+last value will be implemented for BOTTOM
+second value will be implemented for both LEFT and RIGHT SIDE
+*/
+        padding: 60px 30px 90px;
+
+        /*if we are giving 4 values for shrthand padding property
+            values are implemented in the clockwise direction
+first value will be implemented for TOP
+
+second value will be implemented for RIGHT SIDE
+
+third value will be implemented for BOTTOM SIDE
+
+last or Fourth value will be implemented for LEFT SIDE
+
+*/
+
+        padding: 60px 50px 100px 70px;
+      }
+
+      /*Applyling CSS for id use #ClassName  "#id-name"*/
+      #para {
+        background-color: crimson;
+        margin: 50px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">Codekul</div>
+
+    <section id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut excepturi et
+      ea! Minus ipsa ratione incidunt quasi nesciunt, facilis, doloremque
+      obcaecati vel quae consequuntur aspernatur mollitia cum iste debitis
+      reiciendis!
+    </section>
+
+
+
+
+  </body>
+</html>
