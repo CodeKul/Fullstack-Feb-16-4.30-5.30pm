@@ -1,0 +1,43 @@
+/* section.left-column{
+   
+    background-color: darkolivegreen;
+    color: darkturquoise;
+} */
+
+section{
+    background-color: deeppink;
+     width: 300px;
+     display: inline-block;
+}
+
+.left-column{
+    background-color: dodgerblue;
+}
+
+.right-column{
+    background-color: gold;
+    color: maroon;
+}
+
+
+#para2{
+    background-color: maroon;
+    color: orange;
+}
+
+.block{
+    color: orangered;
+    font-size: x-large;
+    font-style: italic;
+}
+
+section.left-column #para{
+    background-color: orchid;
+    color: purple;
+}
+
+
+div a{
+    background-color: red;
+}
+
