@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Layout</title>
+
+    <style>
+      li {
+        display: inline-block;
+        font-size: 18px;
+        width: 50px;
+      }
+
+      header {
+        background-color: rgb(107, 107, 196);
+        color: white;
+        height: 600px;
+      }
+
+      nav {
+        background-color: cadetblue;
+        padding: 6px;
+        position: sticky;
+      }
+
+      img {
+        width: 60%;
+        height: 60%;
+      }
+
+      div {
+        height: 300px;
+        width: 300px;
+        display: inline-block;
+      }
+
+      #two {
+        position: relative;
+        left: 50px;
+        top: 50px;
+      }
+
+      /*
+      Assignment 
+      
+      The goal is to create 4 pages, each page has 4 paragraphs of text. Assign a unique positioning value to the third paragraph. For example, the "position-static.html" page will have a value of "static" as the position value, while the "position-relative.html" page has a position value of "relative".
+
+I recommend you name the files:
+"position-static.html"
+"position-relative.html"
+"position-absolute.html"
+"position-fixed.html"
+*/
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML 5 Semantic Tags and Page Layout</h1>
+
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- <section class="column-1">
+        <img src="./images/5.jpg" alt="" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis,
+          et qui magnam sunt quo aliquam a voluptatum rem ipsum illo, cumque
+          ipsa ea culpa eum incidunt ut inventore cum fugit.
+        </p>
+      </section>
+
+      <section class="column-2">
+
+        <img src="./images/5.jpg" alt="" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis,
+          et qui magnam sunt quo aliquam a voluptatum rem ipsum illo, cumque
+          ipsa ea culpa eum incidunt ut inventore cum fugit.
+        </p>
+      </section> -->
+
+      <div id="one" style="border: 1px solid red; background-color: darkorange">
+        one
+      </div>
+
+      <div id="two" style="border: 1px solid blue; background-color: darkred">
+        two
+      </div>
+    </main>
+  </body>
+</html>
