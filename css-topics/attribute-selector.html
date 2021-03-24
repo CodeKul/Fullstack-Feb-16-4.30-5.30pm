@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+
+    <style>
+        [src]{
+            border-radius: 50%;
+        }
+
+
+/* Syntax 
+
+Element-Name [attribute-name]{
+    css properties
+} */
+        a[title]{
+            font-size: xx-large;
+            box-shadow: 2px 4px 4px 2px;
+        }
+
+
+
+[href="http://www.codekul.com"]{
+    background-color: darkgoldenrod;
+}
+
+img + a {
+    background-color: chartreuse;
+}
+
+
+/* To target elements with attribute values at starting of value in HTML code 
+
+syntax 
+[attribute-name^="starting word of a value"]
+
+*/
+/* [href^="https"]{
+    background-color: darkgreen;
+}
+
+[alt]{
+    border: solid 3px red;
+} */
+
+
+/* 
+
+Syntax for Attribute Selectors 
+[attribute-name]{
+    css properties;
+}
+
+value should be exactly equal as mentioned in a html code
+
+[attribute-name="value"]{
+    css properties;
+} 
+
+
+
+*/
+
+[alt^="ima"]{
+    border-radius: 0;
+}
+
+
+
+/* To target elements with attribute values at ending of value in HTML code 
+
+syntax 
+[attribute-name$="ending word of a value"]
+
+*/
+
+/* [href$="in"]{
+    background-color: darkred;
+    color: deeppink;
+}
+
+[href*="codekul"]{
+    background-color: deepskyblue;
+    color: green;
+} */
+
+img{
+    height: 400px;
+    width: 400px;
+}
+
+
+div[class~="container"]{
+    background-color: green;
+    color: indigo;
+}
+
+
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com">Visit Codekul</a>
+    <img src="../images/blog-writing.jpg" alt="blog-image">
+    <a href="http://www.codekul.com">Visit Codekul</a>
+    <a title="github" href="https://www.github.com">Visit Github</a>
+    <a href="https://www.Amazon.in">Amazon India</a>
+
+    <div class="container block">
+        <img title="image" src="../images/img3.jpg" alt="image3">
+    </div>
+</body>
+</html>
