@@ -1,47 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        a:link{
+        a:link {
             color: red;
             text-decoration: none;
         }
 
-        a:visited{
+        a:visited {
             color: darkgoldenrod;
-            
+
         }
 
-        a:hover{
+        a:hover {
             color: darkmagenta;
             font-size: xx-large;
         }
 
-        li{
+        li {
             display: inline;
         }
 
-        li:hover{
+        li:hover {
             font-style: italic;
             text-decoration: underline;
             color: darkorange;
             background-color: darkred;
         }
+
+        li:nth-child(3) {
+
+            color: rgba(136, 32, 32, 0.767);
+            background-color: chartreuse;
+
+        }
+
+        p:first-child {
+            background-color: darkblue;
+            color: #fff;
+        }
+
+        p:last-child {
+            font-size: 20px;
+            background-color: darkorange;
+        }
+
+        a:nth-child(2) {
+            background-color: deeppink;
+        }
+
+        p:nth-last-child(2){
+            background-color: forestgreen;
+        }
+
+
+/* It will target such p element which is only child of its parent element */
+        p:only-child{
+            background-color: gold;
+        }
+
+
+        p:only-of-type{
+            background-color: lightseagreen;
+            color: maroon;
+        }
+
+        p:last-of-type{
+            background-color:orange;
+            color:maroon;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-<a href="https://www.google.com">Visit Google</a>
+        <a href="https://www.google.com">Visit Google</a>
 
-<ul>
-    <li>Home</li>
-    <li>About</li>
-    <li>Contact</li>
-</ul>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+
+
+        <div>
+            <div>
+                <p>One</p>
+                <p>Two</p>
+
+               <span>Two</span>
+                
+            </div>
+            
+            <a href="https://www.Google.com">Visit Google</a>
+            <p>Two</p>
+            <p>Three</p>
+
+
+            <p>Four</p>
+        </div>
+
+
+        
+            <p>One</p>
+            <p>Two</p>
+            <p>Three</p>
+        
+        
+
+
+
+
     </div>
 </body>
+
 </html>
