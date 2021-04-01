@@ -7,18 +7,28 @@
     <title>Document</title>
 
     <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
         .container{
             display: flex;
+            border: blue solid 2px;
+            height: 550px;
         }
 
         .container-one{
             display: flex;
             flex-direction: row;
+            /* flex-wrap: nowrap; */
+            align-items:center;
+            justify-content: flex-end;
         }
 
-        .container-two{
+        /* .container-two{
             flex-direction: column;
-        }
+        } */
 
 
         .flex-items{
@@ -26,6 +36,8 @@
             height: 100px;
             border: solid 1px black;
             margin: 10px;
+            justify-self: flex-end;
+            
         }
     </style>
 </head>
@@ -38,14 +50,23 @@
             <div class="flex-items">Two</div>
             <div class="flex-items">Three</div>
 
-        </div>
 
-        <div class="container-two">
             <div class="flex-items">One</div>
             <div class="flex-items">Two</div>
             <div class="flex-items">Three</div>
 
+            <!-- <div class="flex-items">One</div>
+            <div class="flex-items">Two</div>
+            <div class="flex-items">Three</div> -->
+
         </div>
+
+        <!-- <div class="container-two">
+            <div class="flex-items">One</div>
+            <div class="flex-items">Two</div>
+            <div class="flex-items">Three</div>
+
+        </div> -->
 
     </div>
 </body>
