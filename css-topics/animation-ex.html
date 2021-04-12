@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            animation-name: magic ;
+            animation-duration: 10s;
+
+            animation-name: splash;
+            height: 300px;
+            width: 300px;
+
+        }
+
+
+        @keyframes magic {
+
+            from{
+
+                transform: scale(0);
+
+            }
+
+            to{
+                transform: scale(3);
+                color: crimson;
+            }
+
+        }
+
+
+        @keyframes splash {
+
+0% {}
+20% {transform: scale(3); background-color: crimson;}
+30%{transform: translateX(100px);}
+50% {transform: rotateX(180deg); background-color: darkgoldenrod;}
+70% {transform: scale(1);}
+90% {transform: rotateY(180deg); background-color: darkgreen;}
+100% {transform: translateY(100px);}
+
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, est ipsa libero consequatur possimus molestiae expedita nostrum deleniti inventore quam mollitia eligendi totam voluptatibus unde hic magni maxime voluptatum vel!</p>
+
+    </div>
+</body>
+</html>

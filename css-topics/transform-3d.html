@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+
+    <style>
+
+       .front-card, .back-card{
+           position: absolute;
+           width: 200px;
+           height: 200px;
+           backface-visibility: hidden;
+           margin-left: 100px;
+       } 
+
+       .back-card{
+           /* background-color: blue; */
+       }
+
+       .front-card{
+           background-color: chartreuse;
+          
+       }
+
+
+       .flip-card{
+        perspective: 1200px;
+       }
+
+
+@keyframes magic {
+
+  from {
+
+  }
+
+  to {
+
+  }
+  
+}
+
+      
+
+       img{
+           height: 200px;
+           width: 200px;
+       }
+
+       .card{
+           /* transform-style: preserve-3d; */
+           /* position: relative; */
+           width: 200px;
+           height: 200px;
+           /* transform-style: preserve-3d; */
+       }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flip-card">
+
+        <div class="card">
+        <div class="front-card">
+          <!-- <img src="../images/3.jpg" alt="" /> -->
+        </div>
+
+        <div class="back-card">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            temporibus quis dolores iste nostrum earum facilis, et tempora
+            repudiandae sunt placeat quisquam dolore officia dolorum
+            voluptatibus magni quos quasi. Amet.
+          </p>
+        </div>
+      </div>
+    </div>
+</div>
+  </body>
+</html>
