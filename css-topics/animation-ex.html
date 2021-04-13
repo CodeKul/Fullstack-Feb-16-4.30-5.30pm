@@ -10,11 +10,25 @@
         .container{
             animation-name: magic ;
             animation-duration: 10s;
+            animation-delay: 3s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+            animation-play-state: paused;
+            animation-fill-mode: forwards;
+
+
+            animation: splash 10s ease-in-out 2s 3;
 
             animation-name: splash;
             height: 300px;
             width: 300px;
 
+        }
+
+
+        .container:hover{
+            animation-play-state:running;
         }
 
 
@@ -27,7 +41,7 @@
             }
 
             to{
-                transform: scale(3);
+                transform:  scale(3) rotateZ(180deg) rotateY(180deg) rotateX(180deg);
                 color: crimson;
             }
 
@@ -36,13 +50,13 @@
 
         @keyframes splash {
 
-0% {}
+0% {transform: translateX(100px); background-color: blue;}
 20% {transform: scale(3); background-color: crimson;}
 30%{transform: translateX(100px);}
 50% {transform: rotateX(180deg); background-color: darkgoldenrod;}
 70% {transform: scale(1);}
 90% {transform: rotateY(180deg); background-color: darkgreen;}
-100% {transform: translateY(100px);}
+100% {transform: translateY(100px); background-color: darkmagenta;}
 
 }
 
