@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        @media screen and (min-width:992px) {
+            .container{
+                background-color: black;
+                color: #fff;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .container{
+                background-color: blue;
+                color: #fff;
+            }
+
+
+            .container-2 .item-1{
+width: 100%;
+            }
+        }
+
+        @media print {
+            .container{
+                background-color: blue;
+                color: #fff;
+                font-style: italic;
+            }
+            
+        }
+
+        .container-2{
+            display: flex;
+        }
+
+        
+
+        .item-1{
+            width: 40%;
+            background-color: brown;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam
+      beatae sunt repudiandae accusantium, eos quae expedita, quo nesciunt illo
+      nobis veniam voluptates. Tempora cumque, ad officiis quis placeat est.
+    </div>
+
+    <div class="container-2">
+<div class="flex-items item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quisquam fuga veniam ratione aut a aliquid minus iste neque ad autem est at ut nisi earum dolorum temporibus similique eveniet!</div>
+<div class="flex-items item-2"></div>
+<div class="flex-items item-3"></div>
+<div class="flex-items item-4"></div>
+    </div>
+  </body>
+</html>
