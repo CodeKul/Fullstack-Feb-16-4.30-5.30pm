@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+</head>
+<body>
+    
+
+
+<script>
+
+// lexical environment 
+// hoisting
+
+// first we declare a variable 
+// second we define a variable i.e we give some value to variable 
+// call or use the variable somewhere
+
+// We can declare a variable by using 3 keywords 
+// 1. let 
+// 2. var 
+// 3. const
+
+    // There are basically two scope for variables
+    // 1. global scope 
+    // 2. block scope / function scope
+
+    
+    var var_2;
+    const var_3=40;
+    var PI=3.14;
+    
+// var var_1;
+
+var_4=25;
+console.log("variable 4 :" +var_4);
+
+let var_4;
+
+
+
+
+    
+    var_2=20;
+    // var_3=40;
+
+    console.log("variable2 :" +var_2);
+
+    PI=5.2;
+
+    var var_1;
+
+    console.log("Variable 1 :" + var_1);
+
+function magic () {
+
+    var_2=30;
+   
+    console.log("variable2 :" +var_2);
+
+    var_1=10;
+
+
+    var_3=50;
+   
+    console.log("Variable 2 :"+var_2);
+    console.log("Variable 3 :" +var_3);
+}
+
+magic ();
+</script>
+</body>
+</html>
