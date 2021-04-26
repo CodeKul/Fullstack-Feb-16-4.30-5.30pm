@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+
+    <script src="functionexample.js"></script>
+
     
 </head>
 <body>
@@ -31,16 +34,63 @@
     // 2. block scope / function scope
 
     
-    var var_2;
+    var var_2 =100;
+    
+   
     const var_3=40;
     var PI=3.14;
     
 // var var_1;
 
-var_4=25;
+//lexical environment, temporal dead zone and window object
+
+
+// The data types available in javascript
+
+counter=20.5;
+
+// var keyword variable - even if we decalre variable after calling still 
+// it will execute. only definition of variable must be done before calling the variable
+
+console.log("counter :" + counter + typeof(counter));
+
+ var_4=25;
+
 console.log("variable 4 :" +var_4);
 
-let var_4;
+var var_4;
+
+var_1=10;
+
+// declaration as well as definition before calling variable  
+
+// not a defined variable - variable is not declared or not present 
+
+// undefined - variable is declared or variable i present but it is not having any value.
+
+
+// List out the types of errors in javascript
+
+function add () {
+
+    var add;
+
+    add = var_1 +  var_2 + var_3;
+
+    console.log(var_2)
+
+    console.log("Addition : " + add);
+
+}
+
+add ();
+
+
+
+
+
+
+// var var_4;
 
 
 
@@ -63,10 +113,10 @@ function magic () {
    
     console.log("variable2 :" +var_2);
 
-    var_1=10;
+   
 
 
-    var_3=50;
+    // var_3=50;
    
     console.log("Variable 2 :"+var_2);
     console.log("Variable 3 :" +var_3);
