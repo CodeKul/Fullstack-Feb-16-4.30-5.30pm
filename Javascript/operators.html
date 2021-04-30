@@ -85,11 +85,64 @@ function LogicalOperators () {
     var a = true;
     var b= true; 
 
- console.log(a&b);
+    // single logical operator symbols are used for bitwise operators 
+    // double logical operator symbols are used for logical operators
+ console.log(a&&b);
 
- console.log(a|b)
+ console.log(a||b)
+
+ console.log(!a);
 
 }
+
+
+//relational/comparison operators
+
+// < - less than 
+// > - greater than
+// == - equal to
+// <= - less than equal to
+// >= - greater than equal to 
+// != - not equal to
+
+
+(function comparisonOperators() {
+    let a = 10;
+    let b="15";
+
+    let c= 10;
+
+    let d ="15"
+
+    // strict equality operator - === 
+    // It checks value is equal to or not as well as data type is also equal to or not
+    console.log("a is less than b:" + (a<b));
+    console.log("a is equal to b:" + (a==b));
+    console.log("a is less than c:" + (a==c));
+    console.log(d/5);
+    console.log("b is equal to d:" + (b===d));
+
+    console.log("a is greater than or equal to c:" + (a>=c));
+})()
+
+// enter marks for 5 subjects for a student 
+// then calculate - 
+// 1. total 
+// 2. percentage 
+// 3. grade according to this range 
+
+// grade first class - 60-75% 
+// second class - 50-60% 
+// pass class - 35-40%
+
+
+// if (total<75) && (total>60){
+//     console.log("grade: first class")
+// }
+
+// else if (total<60) && (total>50){
+//     console.log("grade: second class")
+// }
 
 LogicalOperators();
     </script>
