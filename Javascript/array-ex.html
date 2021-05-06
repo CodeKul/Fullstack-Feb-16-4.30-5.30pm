@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let names = ["sonali", "varsha", "pravin", "vaibhav", ""];
+
+        let numbers = [100, 3200, 300, 44, 55, 66]
+
+
+        let mix = names.concat(numbers);
+
+        console.log(mix)
+
+        document.write(mix)
+
+        console.log(mix.indexOf(3200))
+
+        let person = {
+            name: "sanket",
+            city: "pune",
+            profession: "software engineer"
+        }
+        console.log(names);
+        document.write(names);
+
+        document.write("\n" + names[5])
+
+        document.write("\n" + names.length);
+
+      
+        document.write("\n" + names.push("sanket"));
+
+        document.write("\n" + names.pop());
+
+        document.write("\n" + names.push(200));
+
+        document.write("\n" + names.push(person.name));
+
+        document.write("\n" + numbers.map(Math.sqrt));
+
+        
+
+
+        console.log(names);
+    </script>
+</body>
+</html>
