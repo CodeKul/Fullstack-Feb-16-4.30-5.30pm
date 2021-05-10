@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // Asynchronous Javascript - AJAX
+        
+
+
+        // Synchronous Javascript ex
+
+        var fs = require("fs");
+
+        const A = (filePath) => {
+            const data = fs.readFileSync(filePath)
+            return data.toString()
+        }
+
+        const B = () => {
+            const result = A('./JavascriptErrors.js')
+            if (result) {
+                for (i=0; i<result.length; i++){
+                    console.log(i)
+                }
+               
+            }
+
+            console.log("Result is back from function A")
+
+        }
+
+        B();
+
+       
+
+       
+    </script>
+</body>
+</html>

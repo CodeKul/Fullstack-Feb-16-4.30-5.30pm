@@ -12,6 +12,26 @@
 
         let numbers = [100, 3200, 300, 44, 55, 66]
 
+        let user = [
+            {
+                name: "Vaibhav",
+                city: "Pune",
+                profession: "SWE"
+            },
+
+            {
+                name: "Pravin",
+                city: "Mumbai",
+                profession: "Devops" 
+            },
+
+            {
+                name: "Sonali",
+                city: "Karnataka",
+                profession: "FSE" 
+            }
+        ]
+
 
         let mix = names.concat(numbers);
 
@@ -43,6 +63,30 @@
         document.write("\n" + names.push(person.name));
 
         document.write("\n" + numbers.map(Math.sqrt));
+
+        console.log(names.join("*"))
+
+
+        console.log(user.shift());
+
+        // toString method is used to return the array data in form of string
+        console.log(names.toString())
+
+//find method is used to return the value of specific array element that we are searching
+//syntax - arrayname.find("value")
+
+        // console.log(names.find("sonali"))
+
+
+
+        //splice method is used to add a new array data inside an array
+
+        //syntax - arrayname.splice(position, no. of data, data...)
+        // position- where we wan to add array data 
+        // how many items we want to remove from the given position
+       console.log(names.splice(3 , 1, "siddhi", "vaishanvi"))
+
+       console.log(names.sort())
 
         
 
