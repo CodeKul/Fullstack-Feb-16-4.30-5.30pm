@@ -1,0 +1,49 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "bookName": "The Power of your subconscious Mind",
+            "authorName": "Joseph Murphy",
+            "rating": 4 
+        },
+
+        {
+            "id": 2,
+            "bookName": "The Alchemist",
+            "authorName": "Paulo Coelho",
+            "rating": 5 
+        }, 
+
+        {
+            "id": 3,
+            "bookName": "The Harry Potter",
+            "authorName": "J.K. Rowling",
+            "rating": 6 
+        },
+
+        {
+            "id": 4,
+            "bookName": "The Power of your subconscious Mind",
+            "authorName": "Joseph Murphy",
+            "rating": 3 
+        },
+        {
+            "id": 5,
+            "bookName": "The Power of Renaissance ",
+            "authorName": "Joseph Lloyd",
+            "rating": 2
+        },
+        {
+            "id": 6,
+            "bookName": "The Bloomsbury Anthology of Great Indian Poems",
+            "authorName": "Abhay K",
+            "rating": 8
+        },
+        {
+            "id": 7,
+            "bookName": "The Slavery",
+            "authorName": "Mahatma Jyotiba Phule",
+            "rating": 7
+        }
+    ]
+}

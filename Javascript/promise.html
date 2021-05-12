@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+
+        // var promise1 = new Promise(resolve, reject)
+
+
+        // There are 3 states of promises -
+        // 1. Pending 
+        // 2. Fulfilled/Resolved 
+        // 3. Rejected
+
+        const promise2 = new Promise ((resolve, reject) => {
+            resolve()
+        })
+
+
+        // whenever we are consuming a promise we use then keyword / then method
+
+
+        // then method will run after a promise reaches resolve in the code
+
+        promise2.then((response) => {
+            console.log(response)
+        })
+    </script>
+</body>
+</html>
