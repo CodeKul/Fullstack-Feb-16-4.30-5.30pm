@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="fname">
+
+    <button onclick=showData()>show data</button>
+
+    <p id="show"></p>
+
+
+    <script>
+        function showData() {
+var a = 10;
+var b = 20;
+
+var name = document.getElementById("fname").value
+
+var showName = document.getElementById("show").innerHTML = name
+
+var data = alert("Entered name :" + name )
+
+
+// DOM vs BOM
+//list down all dom methods
+// createElement and append and appendChild 
+//loops, promises, ajax, 
+
+
+var c = a+b
+console.log(c);
+
+        }
+
+       
+
+
+        showData();
+
+      var x =  function () {
+         let a = 20
+         let b = 25
+var mult = a*b;
+console.log(mult)
+        }
+
+        x();
+
+
+        (function codekul () {
+            console.log("codekul")
+        }())
+
+
+        var z = (function () {
+            console.log("welcome to codekul")
+        }) ()
+
+
+    </script>
+</body>
+</html>

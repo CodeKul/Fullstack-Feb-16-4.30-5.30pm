@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label for="">User Id</label>
+    <input id="userId" type="text">
+
+    <label for="">Id</label>
+    <input id="id" type="text">
+
+    <label for="">Title</label>
+    <input id="title" type="text">
+
+
+    <label for="">Message</label>
+    <input id="body" type="text">
+
+    <label for="">Completion Status</label>
+    <input type="checkbox" name="complete" value="Completed" id="complete">
+<label for="">Completed</label>
+    <button onclick=getData()>Get Data</button>
+    <button onclick=sendData()>Send Data</button>
+    
+
+
+    <script>
+
+        // XMLHttpRequest 
+        // JSON.stringify 
+        // JSON.parse 
+        // fetch
+
+        function getData() {
+            let userId = document.getElementById("userId").value;
+            let title = document.getElementById("title").value;
+            let body = document.getElementById("body").value;
+
+
+            let user = {
+            userId:userId,
+            title:title,
+            body:body,
+        };
+
+        return user;
+        }
+
+
+        function sendData() {
+            let userData = getData();
+            var xhr = new XMLHttpRequest();
+
+            xhr.open("POST", "https://jsonplaceholder.typicode.com/posts")
+            xhr.setRequestHeader("Content-type", "application/json");
+            xhr.send(JSON.stringify(userData));
+
+            console.log(userData);
+            console.log(JSON.stringify(userData));
+
+            xhr.onload = function () {
+                if (xhr.status == 201){
+                    console.log(xhr.response)
+                } else {
+                    console.log("Response status code" + xhr.status);
+                }
+            };
+
+            xhr.onerror = function () {
+                console.log("Network error");
+            }
+        }
+
+       
+        
+       
+    </script>
+</body>
+</html>
