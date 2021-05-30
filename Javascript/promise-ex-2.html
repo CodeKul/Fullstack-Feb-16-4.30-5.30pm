@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //syntax 
+        let promise = new Promise(function (resolve, reject) {
+            //statements
+        })
+
+        // let promise1 = new Promise(function(resolve, reject) {
+        //     setTimeout(() => {
+        //         reject(new Error("whoops..! Error"))
+        //     })
+        // })
+
+
+        let promise2 = new Promise(function(resolve, reject) {
+            setTimeout(() => 
+                resolve("done..!!"))
+        }, 1000)
+
+
+
+        let promise3 = new Promise(function(resolve, reject) {
+            const x = "10"
+            const y = "Sonali"
+            const z = 10
+
+
+            if(x === z) {
+                resolve();
+            }
+            else {
+                reject ();
+            }
+        });
+
+
+        promise3.then(function () {
+            console.log("Hi, I am a Vaibhav Patil from Pune")
+        }) .catch(function(){
+            console.log("Some error has occured")
+
+        })
+
+    </script>
+</body>
+</html>

@@ -7,16 +7,38 @@
     <title>Loops</title>
 </head>
 <body>
+
+<form name="selectForm">
+    <p>
+        <label for="">choose the music types, then click on the button below :</label>
+   
+        <select name="musicTypes" id="musicTypes" multiple>
+            <option value="jazz">Jazz</option>
+            <option value="rock">Rock</option>
+            <option value="blues">Blues</option>
+            <option value="edm">EDM</option>
+            <option value="new-age">New Age</option>
+            <option value="classical">Classical</option>
+            <option value="opera">Opera</option>
+        </select>
+   
+    </p>
+
+    <p><input id="btn" type="button"  value="How many are selected ?"></p>
+</form>
+
     <script>
         //  For loop 
         //  while loop 
         //  do while loop 
         // for each loop
+        // for in loop 
+        // for of loop
 
 
         for(i=0; i<5; i++) {
 
-document.write("value of i:"+i);
+console.log("value of i:"+i);
 
 }
 
@@ -27,6 +49,82 @@ document.write("value of i:"+i);
 
         }
 
+        function howMany(selectObject) {
+            let numberSelected = 0;
+            for(let i=0; i<selectObject.options.length; i++){
+                if(selectObject.options[i].selected) {
+                    console.log("in loop "+numberSelected)
+                    numberSelected++;
+                    console.log(numberSelected)
+                }
+            }
+
+
+            return numberSelected;
+        }
+
+
+        //For-in loop 
+        // syntax   for (variableName in Object) { statements }
+
+        var languages = {
+            first: "C",
+            second: "C++",
+            third: "Java",
+            fourth: "Javascript",
+            fifth: "Python",
+            sixth: "Go"
+        }
+
+        for (itr in languages) {
+            document.write(" \n"+languages[itr]);
+        }
+
+        var person ={
+            name: "sonali",
+            city: "karnataka",
+            profession: "SWE",
+            techstack: "MERN"
+        }
+
+
+        for (prop in person){
+            document.write("<p>" + prop + "=" + person[prop] + "</p>")
+        }
+
+
+        var techStack = ["Java", "Javascript", "Go", "Python", "HTML", "CSS", "Kubernetes", "WebGL"]
+
+        for (i in techStack) {
+            document.write("<p>" + techStack[i] + "</p>")
+        }
+
+
+
+        //For-of loop
+        //syntax   for(variableName of arrayName) { statements }
+        // for-of loop doesnt work with objects coz they are not iterable
+
+
+        let cities = ["pune", "mumbai", "banglore", "delhi", "hyderabad", "Goa"];
+
+        for(j of cities){
+            console.log(j)
+        }
+
+
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", function() {
+            alert("Number of options selected:" + howMany(document.selectForm.musicTypes))
+        });
+
+
+        let arr = [1,2,3,4,5];
+
+        arr.forEach((number, index) => {
+            console.log("index" + index + "value" + number)
+            console.log(number*2)
+        })
 
 
     </script>
