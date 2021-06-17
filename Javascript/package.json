@@ -1,0 +1,7 @@
+{
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "parcel axios-ex-2.html",
+        "build": "parcel build axios-ex-2.html"
+    }
+}

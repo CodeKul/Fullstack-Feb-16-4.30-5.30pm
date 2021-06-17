@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        // const axios = require("axios").default;
+
+        // axios.get("https://jsonplaceholder.typicode.com/photos")
+        // .then(function (response) {
+        //     console.log(response)
+        // }).catch(function (error) {
+        //     console.log(error)
+        // })
+
+
+
+        const base_url = "https://jsonplaceholder.typicode.com/photos"
+
+        fetch(`${base_url}/`).then(res => res.json)
+
+        axios.get(`${base_url}/100`).then(res => res)
+        axios.post()
+
+        axios({
+            url: "",
+            method: "get",
+        })
+    </script>
+</body>
+</html>
