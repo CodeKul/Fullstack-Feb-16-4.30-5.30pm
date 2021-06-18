@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Create Element</h2>
+
+
+    <button type="button" onclick=createParagraph()>Create Element</button>
+
+
+    <script>
+        function createParagraph() {
+            let paragrapgh = document.createElement("p")
+
+            let body = document.body;
+
+
+            // syntax for appending child node to parent node 
+            // parentNode.appendChild(childNode)
+
+            body.appendChild(paragrapgh);
+
+            let content = "Hello, Element created by DOM"
+
+           // paragrapgh.appendChild(content)
+
+            paragrapgh.append(content)
+        }
+    </script>
+  </body>
+</html>

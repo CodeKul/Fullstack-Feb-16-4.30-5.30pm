@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+
+        <label for="postId">Post Id</label>
+        <input type="number" name="postId" id="postId"> <br> <br>
+
+        <label for="personName">Name</label>
+        <input type="text" name="personName" id="personName"> <br> <br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"> <br> <br>
+
+      
+
+        <label for="content">Comments</label>
+
+        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+       
+
+        <button type="button" onclick=sendComment()>Post Comment</button>
+        <button type="button" onclick=getAllComments()>Get Comments</button>
+    </form>
+
+    <div id="output"></div>
+    <div id="msg"></div>
+    
+    <script>
+
+        let BASE_URL = "https://jsonplaceholder.typicode.com/comments"
+
+function getCommentedData() {
+    let postId = document.getElementById("postId").value;
+    let email = document.getElementById("email");
+    let personName = document.getElementById("personName").value;
+    let comment = document.getElementById("comment");
+
+    let commentPost = {
+        postId: postId,
+        email: email,
+        personName: personName,
+        comment: comment,
+    };
+    return commentPost;
+}
+
+function sendComment () {
+    let commentData = getCommentedData();
+
+    let p = axios.post(BASE_URL, JSON.stringify(commentData), 
+    {
+        "Content-type": "application/json"
+    })
+
+    console.log(p);
+
+    p.then(function (response){
+        console.log(response.data.id)
+    })
+    
+}
+
+
+function getAllComments() {
+    let p = axios.get(BASE_URL, 
+    {"Content-type": "application/json"})
+
+    p.then(function (comments) {
+        let result = comments.data;
+        let output = ""
+
+        result.map((item, id) => {
+            output += `<p>${item.email}</p>`
+        })
+
+        document.getElementById("output").innerHTML = output
+    })
+}
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
