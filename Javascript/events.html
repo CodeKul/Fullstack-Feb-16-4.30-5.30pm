@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- List down events -->
+
+    <!-- onclick, onmouseover, onmouseend, onload,.... -->
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error earum qui
+      assumenda commodi tenetur inventore doloribus praesentium voluptatibus
+      accusamus corporis aliquam molestiae quam nulla itaque provident nostrum
+      ducimus, nesciunt necessitatibus?
+    </p>
+    <button type="button" onload="changeColor()">Change Color</button>
+
+    <script>
+
+document.onload=changeColor()
+
+      function changeColor() {
+          let paragrapgh = document.getElementById("para")
+          paragrapgh.style.color = "black"
+          paragrapgh.style.backgroundColor = "yellow"
+          paragrapgh.style.width = "400px"
+      }
+    </script>
+
+
+<!-- addeventsListener
+Event capturing 
+Event Bubbling -->
+
+<!-- destructuring - rest parameter, spread paramter -->
+
+<!-- try fetch the data of movie list and display in card with bootstrap and xhr -->
+
+  </body>
+</html>

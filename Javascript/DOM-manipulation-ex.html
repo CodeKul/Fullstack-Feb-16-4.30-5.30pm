@@ -14,22 +14,61 @@
       laborum. Quia aliquam quo officia voluptates amet, aliquid facilis minus?
     </p>
 
+    <section class="news sports">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam nisi sit
+      optio natus, ratione voluptatibus aliquid perspiciatis, quis sequi
+      veritatis, impedit provident quo cupiditate neque quaerat obcaecati
+      aspernatur itaque quidem?
+    </section>
+    <section class="news politics">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam nisi sit
+      optio natus, ratione voluptatibus aliquid perspiciatis, quis sequi
+      veritatis, impedit provident quo cupiditate neque quaerat obcaecati
+      aspernatur itaque quidem?
+    </section>
+    <section class="news entertainment">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam nisi sit
+      optio natus, ratione voluptatibus aliquid perspiciatis, quis sequi
+      veritatis, impedit provident quo cupiditate neque quaerat obcaecati
+      aspernatur itaque quidem?
+    </section>
+    <section class="news economics">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam nisi sit
+      optio natus, ratione voluptatibus aliquid perspiciatis, quis sequi
+      veritatis, impedit provident quo cupiditate neque quaerat obcaecati
+      aspernatur itaque quidem?
+    </section>
 
     <script>
-        let h2 = document.querySelector(".date")
-        h2.setAttribute("id", "heading")
+      let h2 = document.querySelector(".date");
+      h2.setAttribute("id", "heading");
+     let news = document.getElementsByClassName("news economics");
+     //let section = document.getElementsByTagName("section")
 
-        console.log(h2)
-
-        let p = document.getElementById("pOne")
-        p.style.width = "450px"
-        p.style.color = "green"
-        p.style.backgroundColor ="yellow"
+     let section = document.querySelector(".news")
 
 
-        // getelementsbyclassname
-        // queryselectorall
-        // getattributes
+      console.log(news)
+
+
+      console.log(section)
+
+      console.log(h2);
+
+      let p = document.getElementById("pOne");
+      p.style.width = "450px";
+      p.style.color = "green";
+      p.style.backgroundColor = "yellow";
+
+      let x = section.getAttributeNames();
+      section.classList.add("text", "p-shadow")
+      section.classList.remove("sports")
+      section.classList.toggle("t-class", false)
+      console.log(x)
+
+      // getelementsbyclassname
+      // queryselectorall
+      // getattributes
     </script>
   </body>
 </html>
