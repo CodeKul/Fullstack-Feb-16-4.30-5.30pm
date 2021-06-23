@@ -16,18 +16,50 @@
       accusamus corporis aliquam molestiae quam nulla itaque provident nostrum
       ducimus, nesciunt necessitatibus?
     </p>
-    <button type="button" onload="changeColor()">Change Color</button>
+    <button type="button" onclick="changeColor()" ondblclick="changeTextStyle()">Change Color</button>
 
     <script>
 
-document.onload=changeColor()
+//document.onload=changeColor()
+// let para = document.getElementById("para")
+
+// para.onmouse = ("Hello Codekul")
+
+
+let paragrapgh = document.getElementById("para")
+
+function changeTextStyle() {
+
+  paragrapgh.style.fontSize = "25px"
+  paragrapgh.style.color = "blue"
+
+
+
+}
 
       function changeColor() {
-          let paragrapgh = document.getElementById("para")
-          paragrapgh.style.color = "black"
+         
+          paragrapgh.style.color = "red"
           paragrapgh.style.backgroundColor = "yellow"
           paragrapgh.style.width = "400px"
       }
+
+
+      //addEventListenter
+
+      //syntax - element.addEventListener(event, statement)
+
+      // create one input field - 1. when focusing in input element change its borders and background 
+      // 2. when we starting writing in input field all borders should be removed
+
+
+      paragrapgh.addEventListener("click",  () => {
+        paragrapgh.innerText = "Hi, welcome to Codekul"
+
+      })
+
+
+      
     </script>
 
 

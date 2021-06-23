@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form,div,p{
+            padding: 12px;
+            border: solid 2px black;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="" id="formElement">
+
+        <div class="divElement">Inside Div 
+            <p id="pElement">Inside P</p>
+        </div>
+    </form>
+
+
+    <script>
+
+        // element.addEventListener(event, listener, usecapture)
+        // usecapture is a boolean value = true or false , true means event capturing phase,
+        // false means event bubbling phase
+
+        let form = document.getElementById("formElement")
+
+        let div = document.getElementById("divElement")
+
+        let p = document.getElementById("pElement")
+
+        form.addEventListener("click", (e) => {
+            console.log("Form clicked", e.target)
+        }, true)
+
+        div.addEventListener("click", (e)=> {
+            console.log("Div clicked", e.target)
+        },true)
+
+        p.addEventListener("click", (e)=> {
+            console.log("P clicked", e.target)
+        })
+    </script>
+</body>
+</html>
