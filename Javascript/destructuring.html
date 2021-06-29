@@ -10,11 +10,47 @@
     
 
     <script>
-        function add (x,...y) {
+
+        
+
+              function add (x,y, ...z) {
            let add = x+y;
            console.log(add)
            console.log(y)
+           console.log(z)
         }
+
+
+        // rest parameter -> it combines or does the jpoining of multiple arguments
+        // spread parameter -> it separates the values of array into separate arguments.
+
+        function add (x, y, ...z) {
+            var a = x;
+            var b = y;
+           var p = z[0];
+           var q = z[1];
+           var r = z[2];
+           // console.log(p + " " + q + " " + r)
+           console.log(p+" "+b+a+" "+r)
+           console.log(q)
+           console.log(r)
+
+
+           setInterval(() => {
+               console.log("Set Time Interval")
+           }, 2000)
+
+// x -> callback func
+          function x ( y =( z = () => {
+
+          }) => {
+
+          }) {
+
+          }
+
+        } 
+
 
         add(50,10,20,70,50)
 
